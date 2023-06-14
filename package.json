@@ -31,6 +31,15 @@
     "main": "dist-electron/main.js",
     "build": {
         "productName": "AFC",
-        "appId": "com.smallDesktopApp.app"
+        "appId": "com.smallDesktopApp.app",
+        "mac": {
+            "category": "com.smallDesktopApp.app",
+            "target": [
+                "dmg"
+            ]
+        },
+        "win": {
+            "target": "nsis"
+        }
     }
 }
